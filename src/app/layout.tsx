@@ -14,14 +14,14 @@ const mulish = Mulish({
 });
 
 export const metadata: Metadata = {
-  title: "Auto Insurance Quotes Free and Fast | Assurifii",
-  description: "Get free and fast auto insurance quotes from top insurance companies in Nigeria. Compare prices and save money on your auto insurance.",
-  keywords: "auto insurance, car insurance, insurance quotes, Nigeria, fast quotes, compare insurance",
+  title: "Home Insurance Quotes Free and Fast | Assurifii",
+  description: "Get free and fast Home insurance quotes from top insurance companies in Nigeria. Compare prices and save money on your home insurance.",
+  keywords: "home insurance, insurance quotes, Nigeria, fast quotes, compare insurance",
   authors: [{ name: "Assurifii" }],
   robots: "index, follow",
   openGraph: {
-    title: "Auto Insurance Quotes Free and Fast | Assurifii",
-    description: "Get free and fast auto insurance quotes from top insurance companies in Nigeria. Compare prices and save money on your auto insurance.",
+    title: "Home Insurance Quotes Free and Fast | Assurifii",
+    description: "Get free and fast home insurance quotes from top insurance companies in Nigeria. Compare prices and save money on your home insurance.",
     type: "website",
     locale: "en_US",
   },

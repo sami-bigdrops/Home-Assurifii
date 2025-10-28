@@ -10,7 +10,7 @@ const Navbar = () => {
           <div className="flex-shrink-0">
             <Link href="/" className="block">
               <Image
-                src="/Logo.svg"
+                src="/brand.svg"
                 alt="Asurifii Logo"
                 width={180}
                 height={40}

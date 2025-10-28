@@ -4,29 +4,25 @@ import Image from 'next/image'
 // Move partner data outside component to prevent recreation on each render
 const partner = [
     {
-        name: 'American Family Insurance',
-        image: '/partner-1.svg'
-    },
-    {
         name: 'Allstate',
-        image: '/partner-2.svg'
+        image: '/allstate.svg'
     },
     {
-        name: 'Liberty Mutual Insurance',
-        image: '/partner-3.svg'
+        name: 'Farmers Insurance',
+        image: '/farmers-insurance.svg'
+    },
+    {
+        name: 'Kin',
+        image: '/kin.svg'
     },
     {
         name: 'Progressive',
         image: '/partner-4.svg'
     },
     {
-        name: 'Root Insurance',
-        image: '/partner-5.svg'
+        name: 'Liberty Mutual',
+        image: '/liberty-mutual.svg'
     },
-    {
-        name: 'The General',
-        image: '/partner-6.svg'
-    }
 ]
 
 const Partners = () => {
@@ -35,7 +31,7 @@ const Partners = () => {
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
             <h2 className='text-lg font-base text-center'>We Partner With Top Providers</h2>
         </div>
-        <div className='w-full max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6'>
+        <div className='w-full max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5'>
             {partner.map((partner) => (
                 <div key={partner.name} className='flex flex-col items-center justify-center'>
                     <Image 
@@ -43,7 +39,7 @@ const Partners = () => {
                         alt={partner.name} 
                         width={50} 
                         height={50} 
-                        className='w-40 h-40 object-contain'
+                        className='w-42 h-42 object-contain'
                         loading="lazy"
                     />
                 </div>

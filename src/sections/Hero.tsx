@@ -81,7 +81,7 @@ const Hero = () => {
     const utmS1 = getCookie('utm_s1') || ''
 
     // Build the redirect URL
-    const baseUrl = 'https://quote.assurifii.com'
+    const baseUrl = 'https://homequote.assurifii.com'
     const params = new URLSearchParams({
       zip_code: zipCode,
       referrer: 'auto.assurifii.com',
@@ -129,7 +129,7 @@ const Hero = () => {
           {/* Content */}
           <div className='max-w-2xl space-y-8 mx-auto lg:mx-0 py-0 lg:py-16'>
             <h1 className='text-[32px] font-[800] text-[#12266D] leading-tight text-center lg:text-left max-w-[360px] lg:max-w-none mx-auto lg:mx-0'>
-              Let&apos;s drop your rate{cityName ? ` in ${cityName}` : ''} today!
+              Protect Your Home - Compare Homeowners Insurance Quotes
             </h1>
             
             <div className='bg-[#12266D] rounded-xl p-6 sm:p-8 max-w-2xl mx-auto lg:mx-0 shadow-2xl'>
