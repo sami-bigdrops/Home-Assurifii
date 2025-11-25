@@ -1,8 +1,5 @@
 import type { Metadata } from "next";
 import { Mulish } from "next/font/google";
-import { Analytics } from "@vercel/analytics/next"
-import { SpeedInsights } from "@vercel/speed-insights/next"
-import TrackingHandler from "@/components/TrackingHandler";
 import "./globals.css";
 
 const mulish = Mulish({
@@ -11,20 +8,14 @@ const mulish = Mulish({
   display: 'swap',
   preload: true,
   fallback: ['system-ui', 'arial'],
+  adjustFontFallback: true,
+  weight: ['400', '600', '700', '800'],
 });
 
 export const metadata: Metadata = {
-  title: "Home Insurance Quotes Free and Fast | Assurifii",
-  description: "Get free and fast Home insurance quotes from top insurance companies in Nigeria. Compare prices and save money on your home insurance.",
-  keywords: "home insurance, insurance quotes, Nigeria, fast quotes, compare insurance",
-  authors: [{ name: "Assurifii" }],
-  robots: "index, follow",
-  openGraph: {
-    title: "Home Insurance Quotes Free and Fast | Assurifii",
-    description: "Get free and fast home insurance quotes from top insurance companies in Nigeria. Compare prices and save money on your home insurance.",
-    type: "website",
-    locale: "en_US",
-  },
+  title: "Site Under Maintenance | Assurifii",
+  description: "The site is currently under maintenance. Please check back soon.",
+  robots: "noindex, nofollow",
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
@@ -51,24 +42,12 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/favicon.png" type="image/png" />
         <link rel="apple-touch-icon" href="/favicon.png" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="//quote.assurifii.com" />
-        <link rel="dns-prefetch" href="//vercel-analytics.com" />
-        <link rel="dns-prefetch" href="//vitals.vercel-insights.com" />
-        <link rel="preload" href="/landing-illustration.svg" as="image" type="image/svg+xml" />
-        <link rel="preload" href="/Logo.svg" as="image" type="image/svg+xml" />
       </head>
       <body
         className={`${mulish.variable} antialiased h-full`}
         suppressHydrationWarning={true}
       >
-        <TrackingHandler />
         {children}
-        <Analytics />
-        <SpeedInsights 
-          sampleRate={1}
-        />
       </body>
     </html>
   );
